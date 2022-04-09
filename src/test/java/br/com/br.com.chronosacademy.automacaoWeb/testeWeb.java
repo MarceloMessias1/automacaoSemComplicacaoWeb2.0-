@@ -17,6 +17,7 @@ import static org.junit.Assert.assertEquals;//40
 
 public class testeWeb {
 
+<<<<<<< HEAD
     WebDriver driver;
     Driver driverWeb;
 
@@ -27,6 +28,23 @@ public class testeWeb {
         driver.get("https://www.chronosacademy.com.br");
 }
     @Test
+=======
+    ChromeDriver driver;
+
+    @Before
+public void inicializaTeste(){
+
+    WebDriverManager.chromedriver().setup();
+    driver = new ChromeDriver();
+    driver.manage().window().maximize();
+    driver.get("https://www.chronosacademy.com.br");
+
+
+}
+    @Test
+
+
+>>>>>>> master
     public void primeiroTeste() {
 
 
