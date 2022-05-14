@@ -1,4 +1,4 @@
-package br.com.br.com.chronosacademy.automacaoWeb;
+package br.com.chronosAcademy.media;
 
 import br.com.br.com.chronosacademy.automacaoWeb.core.Driver;
 import br.com.br.com.chronosacademy.automacaoWeb.pages.CursoPage;
