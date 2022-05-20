@@ -41,7 +41,15 @@ Funcionalidade: Login
       | usuario invalido | invalido | senha    | true     |
       | senha invalida   | chronos  | invalida | true     |
 
+
   Esquema do Cenario: Realizar login com <identificacao>
-    Quando os campos de login sejam preenchidos da seguinte forma
+    Quando os campos de login forem preenchidos da seguinte forma
       | login    | <login>    |
       | password | <password> |
+      | remember | <remember> |
+    Entao o botao sign in deve permanecer desabilitado
+
+    Exemplos:
+      | identificacao     | login   | password | remember |
+      | usuario em branco |         | senha    | false    |
+      | senha em branco   | chronos |          | false    |
