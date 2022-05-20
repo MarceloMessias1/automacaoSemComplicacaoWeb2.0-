@@ -45,10 +45,3 @@ Funcionalidade: Login
     Quando os campos de login sejam preenchidos da seguinte forma
       | login    | <login>    |
       | password | <password> |
-      | remember | <remember> |
-    Entao o botao sign in deve permanecer desabilitado
-    Exemplos:
-      | identificacao     | login   | password | remember |
-      | usuario em branco |         | senha    | false    |
-      | senha em branco   | chronos |          | false    |
-
