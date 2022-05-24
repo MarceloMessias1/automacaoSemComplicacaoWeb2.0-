@@ -2,6 +2,8 @@ package br.com.br.com.chronosacademy.automacaoWeb.pages;
 
 import br.com.br.com.chronosacademy.automacaoWeb.core.Driver;
 import br.com.br.com.chronosacademy.automacaoWeb.maps.LoginMap;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
@@ -13,6 +15,7 @@ public class LoginPage {
     }
 
     public void clickBtnLogin(){
+        Driver.invisibilityOf(loginMap.btnLogin);
         loginMap.btnLogin.click();
     }
 
@@ -47,4 +50,14 @@ public class LoginPage {
     public boolean isBtnSignIn(){
         return loginMap.btnSignInp.isEnabled();
     }
+
+
+    public void visibilityOfBtnFechar(){
+        Driver.visibilityOf(loginMap.btnFechar);
+    }
+
+    public void invisibilityOfBtnFechar(){
+        Driver.invisibilityOf(loginMap.btnFechar);
+    }
+
 }
